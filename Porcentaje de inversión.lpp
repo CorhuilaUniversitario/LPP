@@ -1,0 +1,42 @@
+/*
+----------------------------------------------------------------------------------------------------------------------------
+					  AUTORES                   CODIGO
+				NICOLAS TELLO MENDEZ          9022224149
+				MARIA CELESTE DUSSAN OSPINA   9022224149
+----------------------------------------------------------------------------------------------------------------------------
+	Tres personas deciden invertir su dinero para fundar una empresa. Cada una de ellas
+	invierte una cantidad distinta. Obtener el porcentaje que cada uno invierte con respecto a
+	la cantidad total invertida.
+*/
+
+REAL Cant1, Cant2, Cant3, Total, Porcen1, Porcen2, Porcen3
+
+INICIO
+	//Entrada de datos
+	Escriba "Digite la cantidad invertida por la persona 1: $"
+	Lea Cant1
+
+	Escriba "Digite la cantidad invertida por la persona 2: $"
+	Lea Cant2
+
+	Escriba "Digite la cantidad invertida por la persona 2: $"
+	Lea Cant3
+	
+	//Proceso
+	Total<-Cant1+Cant2+Cant3
+	Porcen1<-(Cant1/Total)*100
+	Porcen2<-(Cant2/Total)*100
+	Porcen3<-(Cant3/Total)*100
+		Llamar Nueva_Linea
+		
+	//Salida
+	Escriba "La cantidad total invertida fue de: $",Total
+		Llamar Nueva_Linea
+		Llamar Nueva_Linea
+	Escriba "El porcentaje que invirtio la persona 1 fue de un: ",Porcen1,"%"
+		Llamar Nueva_Linea
+	Escriba "El porcentaje que invirtio la persona 2 fue de un: ",Porcen2,"%"
+		Llamar Nueva_Linea
+	Escriba "El porcentaje que invirtio la persona 3 fue de un: ",Porcen3,"%"
+	
+FIN

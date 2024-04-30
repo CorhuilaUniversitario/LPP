@@ -1,0 +1,51 @@
+real temp_1, temp_2, temp, hrs_v, operacion1, operacion2,descuento1,operacion3,operacion4,operacion5,operacion6,descuento2
+
+inicio 
+
+escriba "ingrese el valor por hora de la temporada 1  : "
+lea temp_1
+
+escriba "ingrese  el valor por la temporada 2  : " 
+lea temp_2
+
+escriba "en que temporada utilizo el vehiculo , en la temporada 1 o 2  : "
+lea temp
+
+escriba "por cuanto tiempo utilizo el vehiculo : "
+lea  hrs_v
+
+
+si hrs_v>10 entonces 
+operacion1<-hrs_v-10
+operacion2<-(operacion1*temp_1)/100
+descuento1<-temp_1-operacion2   
+   
+escriba "el valor a pagar por temporada 1 es : " , descuento1
+
+llamar nueva_linea
+sino 
+si hrs_v<10 entonces
+operacion3<-hrs_v*temp_1
+escriba "el valor a pagar es : " , operacion3
+llamar nueva_linea
+
+si hrs_v>10 entonces 
+operacion4<-hrs_v-10
+operacion5<-(operacion1*temp_2)/100
+descuento2<-temp_2-operacion2   
+   
+escriba "el valor a pagar por temporada 2 es : " , descuento2
+llamar nueva_linea
+
+
+sino 
+si hrs_v<10 entonces
+operacion6<-hrs_v*temp_2
+escriba "el valor a pagar es : " , operacion6
+
+fin si
+fin si
+fin si
+fin si
+
+fin

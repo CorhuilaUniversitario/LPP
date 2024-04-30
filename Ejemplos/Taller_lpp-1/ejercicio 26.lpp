@@ -1,0 +1,7 @@
+real grados, rad
+inicio
+escriba "ingresar el nuemero de grados: "
+lea grados
+rad<- (grados*3.1416)/180
+escriba "El valor en radianes es: ",rad
+fin

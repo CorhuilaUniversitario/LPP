@@ -1,0 +1,98 @@
+/*
+----------------------------------------------------------------------------------------------------------------------------
+		AUTOR: NICOLAS TELLO MENDEZ  CODIGO: 9022224149
+----------------------------------------------------------------------------------------------------------------------------
+Determina el promedio de la calificacion del corte de un estudiante, teniendo en cuenta las siguientes apreciacione:
+		a) Dos notas por taller (30%)
+		b) Una nota por apreciacion (10%)
+		c) Dos notas por quiz (20%)
+		d) Una nota por el parcial (40%)
+NOTA: Validar que solo ingrese notas de 1-5, de lo contrario finalizar el programa
+*/
+
+CADENA [30] Nombre
+	/*
+		Nombre = Nombre del estudiante
+	*/
+	
+REAL NoTa1, NoTa2, NoApre, NotQuiz1, NotQuiz2, NotParci, NoTalleres, NotApreciativa, NotQuizzes, NotParcial, NotaFinal
+	/*
+		NoTa1 = Primera nota del taller
+		NoTa2 = Segunda nota del taller
+		NoApre = Nota apreciativa
+		NotQuiz1 = Primera nota del quiz
+		NotQuiz2 = Segunda nota del quiz
+		NotParcia = Nota parcial
+		NoTalleres = Nota de los dos talleres con valor del 30%
+		NotApreciativa = Nota apreciativa con valor del 10%
+		NotQuizzes = Nota de los dos quizzes con valor del 20%
+		NotParcial = Nota parcial con valor del 40%
+		NotaFinal = Promedio de las calificacines
+	*/
+	
+INICIO
+	//Recolectar datos
+	Escriba "Digite su nombre: "
+	Lea Nombre
+	Llamar Nueva_Linea
+	
+	Escriba "INGRESAR NOTAS SOLO DE 1.0 A 5.0"	
+	Llamar Nueva_Linea 
+	
+	Llamar Nueva_Linea
+	Escriba "Digite la nota del primer taller: "
+	Lea NoTa1
+		
+	Si (NoTa1<1) O (NoTa1>5) entonces
+		Escriba "ERROR! Ha ingresado notas diferntes de 1.0 a 5.0"
+	Sino
+		Escriba "Digite la nota del segundo taller: "
+		Lea NoTa2
+			
+		Si (NoTa2<1) O (NoTa2>5) entonces
+			Escriba "ERROR! Ha ingresado notas diferntes de 1.0 a 5.0"
+		Sino
+			Escriba "Digite la nota apreciativa: "
+			Lea NoApre
+				
+			Si (NoApre<1) O (NoApre>5) entonces
+				Escriba "ERROR! Ha ingresado notas diferntes de 1.0 a 5.0"
+			Sino
+				Escriba "Digite la nota del primer Quiz: "
+				Lea NotQuiz1
+				
+				Si (NotQuiz1<1) O (NotQuiz1>5) entonces
+					Escriba "ERROR! Ha ingresado notas diferntes de 1.0 a 5.0"
+				Sino
+					Escriba "Digite la nota del segundo Quiz: "
+					Lea NotQuiz2
+					
+					Si (NotQuiz2<1) O (NotQuiz2>5) entonces
+						Escriba "ERROR! Ha ingresado notas diferntes de 1.0 a 5.0"
+					Sino	
+						Escriba "Digite la nota del parcial: "
+						Lea NotParci
+					
+						Si (NotQuiz2<1) O (NotQuiz2>5) entonces
+							Escriba "ERROR! Ha ingresado notas diferntes de 1.0 a 5.0"
+						Sino
+							//Desarrollo
+							NoTalleres <- ((NoTa1+NoTa2)/2)*0.30
+							NotApreciativa <- NoApre*0.10
+							NotQuizzes <- ((NotQuiz1+NotQuiz2)/2)*0.20
+							NotParcial <- NotParci*0.40
+							
+							NotaFinal <- NoTalleres+NotApreciativa+NotQuizzes+NotParcial
+							
+							//Conclusion
+							Llamar Nueva_Linea
+							Escriba Nombre,", su calificion promedio del corte es de: ",NotaFinal
+							
+						Fin si
+					Fin si	
+				Fin si		
+			Fin si		
+		Fin si	
+	 Fin si
+	 
+FIN

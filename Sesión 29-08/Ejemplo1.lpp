@@ -1,0 +1,34 @@
+/*
+	Ejemplo: Promedio de tres notas: 		
+	Variables: nota_1, nota_2, nota_3, promedio
+*/
+REAL nota_1, nota_2, nota_3,nota_4, promedio
+ENTERO cantidadNota
+INICIO
+	 //Inicializar variables
+	 nota_1<-0
+	 nota_2<-0
+	 nota_3<-0
+	 nota_4<-0
+	 promedio<-0
+	 cantidadNota<-4
+	 
+	 ESCRIBA "Digite la nota 1: "
+	 LEA nota_1
+	 
+	 ESCRIBA "Digite la nota 2: "
+	 LEA nota_2
+	 
+	 ESCRIBA "Digite la nota 3: "
+	 LEA nota_3
+	 
+	 ESCRIBA "Digite la nota 4: "
+	 LEA nota_4
+	 
+	 //Proceso
+	 promedio <- (nota_1+nota_2+nota_3+nota_4)/cantidadNota
+	 
+	 //Salida
+	 ESCRIBA "El promedio es de ",promedio
+
+FIN

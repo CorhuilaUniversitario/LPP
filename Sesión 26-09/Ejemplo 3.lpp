@@ -1,0 +1,25 @@
+ENTERO n1,n2,nMenor, nMayor
+INICIO 
+	//Entrada de datos 
+	ESCRIBA "Digite el numero 1: "
+	LEA n1
+	
+	ESCRIBA "Digite el numero 2: "
+	LEA n2
+	
+	SI(n1<>n2)ENTONCES
+		SI(n1>n2)ENTONCES
+			nMayor<-n1
+			nMenor<-n2
+		SINO 
+			nMayor<-n2
+			nMenor<-n1
+		FIN SI
+		
+		ESCRIBA "El numero mayor es: ",nMayor
+		LLAMAR nueva_linea
+		ESCRIBA "El numero menor es: ",nMenor
+	SINO 
+		ESCRIBA "Ha ingresado datos iguales."
+	FIN SI
+FIN

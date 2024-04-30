@@ -1,0 +1,49 @@
+/*
+	Crear un programa que imprima los número digitos.
+*/
+ENTERO n,i
+INICIO 
+	i<-1
+	n<-0
+	
+	ESCRIBA n
+	LLAMAR Nueva_linea
+	
+	n<-n+i
+	ESCRIBA n
+	LLAMAR Nueva_linea
+	
+	n<-n+i
+	ESCRIBA n
+	LLAMAR Nueva_linea
+	
+	n<-n+i
+	ESCRIBA n
+	LLAMAR Nueva_linea
+	
+	n<-n+i
+	ESCRIBA n
+	LLAMAR Nueva_linea
+	
+	n<-n+i
+	ESCRIBA n
+	LLAMAR Nueva_linea
+	
+	n<-n+i
+	ESCRIBA n
+	LLAMAR Nueva_linea
+	
+	n<-n+i
+	ESCRIBA n
+	LLAMAR Nueva_linea
+	
+	n<-n+i
+	ESCRIBA n
+	LLAMAR Nueva_linea
+	
+	n<-n+i
+	ESCRIBA n
+	LLAMAR Nueva_linea
+	
+	
+FIN

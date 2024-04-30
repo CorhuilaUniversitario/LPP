@@ -1,0 +1,38 @@
+entero num1,num2,num3,prim,seg,ter
+inicio
+escriba "ingrese un numero cualquiera: "
+lea num1
+escriba "ingrese un numero  cualquiera : "
+lea num2
+escriba "ingrese un numero cualquiera: "
+lea num3
+
+si (num1<num2) y (num1<num3) entonces
+    escriba " el numero menor es ", num1
+	si (num2<num3) entonces
+	  escriba "el numero medio es " , num2
+	  llamar nueva_linea
+	  escriba "el numero menor es " , num3
+    fin si
+sino si (num3<num1) y (num3<num2)entonces
+escriba "el numero menor es ", num3
+    si ( num1<num2) entonces
+		escriba "el numero medio es : " , num1
+		 llamar nueva_linea
+		escriba "el numero mayor es : " , num2
+	fin si
+sino si (num2<num1) y (num2<num3)entonces
+escriba "el numero menor es ", num2
+    si ( num1<num3) entonces
+		escriba "el numero medio es : " , num1
+		 llamar nueva_linea
+		 escriba "el numero mayor es : " , num3
+	fin si	
+fin si
+fin si
+fin si
+fin 
+
+
+
+

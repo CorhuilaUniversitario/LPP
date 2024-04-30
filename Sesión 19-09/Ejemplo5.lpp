@@ -1,0 +1,90 @@
+//. Leer tres números e imprimirlos en orden ascendente.
+//Nota: Debe ingresar de manera obligatoria numero diferentes.
+ENTERO numero1, numero2, numero3, nMenor, nIntermedio, nMayor
+
+INICIO 
+	//Inicializar variables
+	numero1<-0
+	numero2<-0
+	numero3<-0
+	nMenor<-0
+	nIntermedio<-0
+	nMayor<-0
+	
+	//Entrada de datos
+	ESCRIBA "Digite el numero 1: "
+	LEA numero1
+	
+	ESCRIBA "Digite el numero 2: "
+	LEA numero2
+	
+	ESCRIBA "Digite el numero 3: "
+	LEA numero3
+	
+	//Ordenar - Proceso
+	SI(numero1 = numero2) O (numero1=numero3) O (numero2 = numero3)ENTONCES
+		ESCRIBA "ha ingresado datos no validos."
+	SINO 
+		//Encontrar numero mayor
+		SI(numero1>numero2)Y(numero1>numero3)ENTONCES
+			nMayor<-numero1			
+		FIN SI
+		
+		SI(numero2>numero1)Y(numero2>numero3)ENTONCES
+			nMayor<-numero2
+		FIN SI
+		
+		SI(numero3>numero1)Y(numero3>numero2)ENTONCES
+			nMayor<-numero3
+		FIN SI
+					
+		//Encontrar numero intermedio
+		SI(numero1>numero2) Y (numero1<numero3)ENTONCES
+			nIntermedio<-numero1
+		FIN SI
+		
+		SI(numero1<numero2) Y (numero1>numero3)ENTONCES
+			nIntermedio<-numero1
+		FIN SI
+		
+		SI(numero2>numero1) Y (numero2<numero3)ENTONCES
+			nIntermedio<-numero2
+		FIN SI
+		
+		SI(numero2<numero1) Y (numero2>numero3)ENTONCES
+			nIntermedio<-numero2
+		FIN SI
+		
+			SI(numero3>numero1) Y (numero3<numero2)ENTONCES
+			nIntermedio<-numero3
+		FIN SI
+		
+		SI(numero3<numero1) Y (numero3>numero2)ENTONCES
+			nIntermedio<-numero3
+		FIN SI
+		
+		
+		//Encontrar numero menor
+		SI(numero1<numero2) Y(numero1<numero3)ENTONCES
+			nMenor<-numero1
+		FIN SI
+		SI(numero2<numero1) Y(numero2<numero3)ENTONCES
+			nMenor<-numero2
+		FIN SI
+		SI(numero3<numero2) Y(numero3<numero1)ENTONCES
+			nMenor<-numero3
+		FIN SI
+		
+		ESCRIBA "Datos ingresados: ",numero1,", ",numero2,", ",numero3 
+		LLAMAR Nueva_linea
+		ESCRIBA "Numero menor es: ",nMenor
+		LLAMAR Nueva_linea
+		ESCRIBA "Numero intermedio es: ",nIntermedio
+		LLAMAR Nueva_linea
+		ESCRIBA "Numero mayor es: ",nMayor
+		
+		
+		
+	FIN SI
+
+FIN

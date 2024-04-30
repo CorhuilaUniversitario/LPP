@@ -1,0 +1,34 @@
+/*Leer un entero e imprimir si el número está dentro del rango 200-300 y si es asi
+imprimir si es par o impar*/
+
+ENTERO numero
+INICIO 
+	//Inicializar variable
+	numero<-0
+	
+	//Entrada de datos
+	ESCRIBA "Digite el numero que desea validar: "
+	LEA numero
+	
+	SI(numero>=200) y (numero<=300)ENTONCES
+		ESCRIBA "Esta dentro del rango"
+		//Realizar segunda parte
+		SI(numero MOD 2 = 0)ENTONCES
+		Llamar Nueva_linea
+			ESCRIBA "Numero par."
+		SINO
+		Llamar Nueva_Linea
+			ESCRIBA "Numero impar."
+		FIN SI
+	Sino
+		Escriba "No esta dentro del rango"
+		//Realizar segunda parte
+		SI(numero MOD 2 = 0)ENTONCES
+		Llamar Nueva_linea
+			ESCRIBA "Numero par."
+		SINO
+		Llamar Nueva_Linea
+			ESCRIBA "Numero impar."
+		FIN SI	
+	FIN SI
+FIN

@@ -1,0 +1,23 @@
+entero m2, m5, m10, m20, m50, m100, vm2, vm5, vm10, vm20, vm50, vm100, vt
+inicio
+escriba "Ingresar el numero de monedas de 2 : "
+lea m2
+escriba "Ingresar el numero de monedas de 5 : "
+lea m5
+escriba "Ingresar el numero de monedas de 10 : "
+lea m10
+escriba "Ingresar el numero de monedas de 20 : "
+lea m20
+escriba "Ingresar el numero de monedas de 50 : "
+lea m50
+escriba "Ingresar el numero de monedas de 100 : "
+lea m100
+vm2<- m2*2
+vm5<- m5*5
+vm10<- m10*10
+vm20<- m20*20
+vm50<- m50*50
+vm100<- m100*100
+vt<-vm2+vm5+vm10+vm20+vm50+vm100
+escriba "El valor obtenido por el total de las monedas es : ", vt
+fin

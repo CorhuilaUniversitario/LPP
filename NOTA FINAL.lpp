@@ -1,0 +1,73 @@
+/*
+----------------------------------------------------------------------------------------------------------------------------
+		AUTOR: NICOLAS TELLO MENDEZ  CODIGO: 9022224149
+----------------------------------------------------------------------------------------------------------------------------
+
+Se requiere un programa que permita al estudiante calcular la nota final, teniendo en cuenta las siguientes características.
+	°Obtuvo tres notas por sus trabajos.
+	°Obtuvo dos notas por el parcial, uno de conceptos y otro práctico.
+	°Obtuvo una nota por asistencia
+	°Obtuvo una nota apreciativa.
+
+Para sacar la nota final, tenga en cuenta lo siguiente:
+	°Notas del trabajo equivale al 30%
+	°Nota del parcial equivale al 60% desglosado así (conceptos 40% y el técnico 60%)
+	°Nota de asistencia 10%
+	°Nota apreciativa (Esta sirve para mejorar la nota del estudiante, por lo tanto, solo se agregan decimas de 0.1 al 1.0 y se suman a la nota final,
+	 antes de ser mostrada al estudiante.
+
+Nota: Las notas solo deben ser ingresadas de 0.0 a 5.0, a excepción de la nota apreciativa que se suma a la nota final
+*/
+
+REAL not1, not2, not3, parc1, parc2, notasis, notapre, Notrabajos, Notparciales, Notasistencia, Notapreciativa, Notafinalsin, Notafinalcon
+
+INICIO
+	//recolectar
+	ESCRIBA "Las notas solo deben ser ingresadas desde 0.0 a 5.0"
+	
+	LLAMAR NUEVA_LINEA
+	ESCRIBA "Digite la nota del primer trabajo: "
+	LEA not1
+	
+	LLAMAR NUEVA_LINEA
+	ESCRIBA "Digite la nota del segundo trabajo: "
+	LEA not2
+	
+	LLAMAR NUEVA_LINEA
+	ESCRIBA "Digite la nota del tercer trabajo: "
+	LEA not3
+	
+	LLAMAR NUEVA_LINEA
+	ESCRIBA "Digite la nota del primer parcial-conceptos: "
+	LEA parc1
+	
+	LLAMAR NUEVA_LINEA
+	ESCRIBA "Digite la nota del segundo parcial-practico: "
+	LEA parc2
+	
+	LLAMAR NUEVA_LINEA
+	ESCRIBA "Digite su nota por asistencia: "
+	LEA notasis
+	
+	LLAMAR NUEVA_LINEA
+	ESCRIBA "En la nota apreciativa solo se debe agregar decimas de 0.1 al 1.0"
+	
+	LLAMAR NUEVA_LINEA
+	ESCRIBA "Digite su nota apreciativa, menor a un decimal: "
+	LEA notapre
+	
+	//desarrollo
+	Notrabajos<-((not1+not2+not3)/3)*0.30
+	Notparciales<-(((parc1/1)*0.40)+((parc2/1)*0.60))*0.60
+	Notasistencia<-notasis*0.10
+	Notapreciativa<-notapre
+
+	Notafinalsin<-Notrabajos+Notparciales+Notasistencia
+	Notafinalcon<-Notrabajos+Notparciales+Notasistencia+Notapreciativa
+	
+	//resultado
+	ESCRIBA "Su nota final SIN Apreciativa es de: ",Notafinalsin
+	LLAMAR NUEVA_LINEA
+	ESCRIBA "Su nota final CON Apreciativa es de: ",Notafinalcon
+
+FIN

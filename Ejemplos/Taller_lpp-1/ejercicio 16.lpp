@@ -1,0 +1,20 @@
+real ginecol, pediat, traumatol, p_gin, p_p,p_t,v_p
+inicio
+escriba "ingrese valor de ginecologia:"
+lea ginecol
+escriba "el valor  de pediatria: "
+lea pediat
+escriba "el valor de traumatologia ($) : "
+lea traumatol
+p_gin<-ginecol+(ginecol*40)/100
+p_p<-pediat+(pediat*30)/100
+p_t<-traumatol+(traumatol*30)/100
+v_p<-p_gin+p_p+p_t
+escriba "el dinero que recibira la ginecologia es:", p_gin
+llamar nueva_linea
+escriba "el dinero que recibira pediatria es : " , p_p
+llamar nueva_linea
+escriba "el dinero que recibira traumatologia es: " ,p_t
+llamar nueva_linea
+escriba "el valor total porciento es: " , v_p
+fin

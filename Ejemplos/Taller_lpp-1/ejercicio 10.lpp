@@ -1,0 +1,13 @@
+real  valor_compra , total, operacion,total_pagar
+inicio
+escriba "ingrese el valor total de la compra:  "
+lea total 
+operacion<-(total*15)/100
+total_pagar<-total-operacion
+
+
+escriba "el valor de la ganacia por la compa  es: " , operacion
+llamar nueva_linea
+escriba " total a pagar: " , total_pagar
+
+fin

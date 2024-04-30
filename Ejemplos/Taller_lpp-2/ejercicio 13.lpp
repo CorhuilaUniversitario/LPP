@@ -1,0 +1,20 @@
+entero x1, y1
+inicio
+escriba " ingrese un numero:  "
+lea x1
+escriba " ingrese otro  numero  :"
+lea y1
+
+
+si (x1>0 ) o (y1>0) entonces
+escriba "hay un numero positivo : " , x1   ,   "y"   ,        y1
+
+sino 
+
+si (x1<0 ) o (y1<0) entonces
+escriba "error ambos numeros son  negativos : " 
+
+
+fin si
+fin si
+ fin

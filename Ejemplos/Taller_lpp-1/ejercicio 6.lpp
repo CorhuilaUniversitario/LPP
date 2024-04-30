@@ -1,0 +1,12 @@
+real num_neg , num_pos , calc
+inicio
+escriba "ingresar un numero negativo: "
+lea num_neg
+si(num_neg > 0)
+entonces 
+escriba "Debe ingresar un numero menor de cero"
+sino 
+calc<- num_neg/(-1)
+escriba "el numero ingresado en positivo es: ", calc
+fin si
+fin

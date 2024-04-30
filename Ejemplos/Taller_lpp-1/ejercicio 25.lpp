@@ -1,0 +1,9 @@
+real ladoA, ladoB, hip
+inicio
+escriba "Ingresar lado A de triangulo "
+lea ladoA
+escriba "Ingresar lado B de triangulo "
+lea ladoB
+hip<- (ladoA^2 + ladoB^2)^(1/2)
+escriba "La hipotenusa es: ",hip
+fin

@@ -1,0 +1,9 @@
+real m, v, ec
+inicio
+escriba "Ingrese M : "
+lea m
+escriba "Ingrese V : "
+lea v
+ec<- (M*V^2)/2
+escriba "La energia cinetica del cuerpo en movimiento es : ", ec
+fin

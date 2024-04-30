@@ -1,0 +1,42 @@
+/*
+	Crear un programa que permita hallar el promedio de n notas de un estudiante
+	
+	cantidadNota= cantidad de las notas para el estudiante
+	i = variable de iteracion del ciclo
+	acum = variable que va a acular las notas del estudiante
+	cont = varaible para contar las notas del estudiante
+	cantidadNota, i, acum, cont, nota
+	
+	Nota: Acumulador corresponde al mismo concepto de contador, la diferencia se establece que esta variable
+	por cada iteración suma valores diferentes
+	acu <- acu + x
+*/
+REAL acum, cont, nota,promedioGlobal
+ENTERO cantidadNota, i
+INICIO 
+	acum<-0
+	cont<-0
+	
+	ESCRIBA "Digite cuantas notas se le va a promediar: "
+	LEA cantidadNota
+	
+	SI(cantidadNota>0)ENTONCES
+		PARA i<-1 HASTA cantidadNota HAGA
+			cont<-i
+			ESCRIBA "Digite la nota ",cont,": "
+			LEA nota
+			SI(nota>=0) Y (nota<=5)ENTONCES				
+				acum<-acum+nota				
+			SINO
+				ESCRIBA "Nota ingresada no valida."
+				LLAMAR Nueva_linea
+				i<-i-1
+			FIN SI
+		FIN PARA
+		//Hallar promedio
+		promedioGlobal<-acum/cantidadNota
+		ESCRIBA "El promedio fue: ",promedioGlobal
+	SINO 
+		ESCRIBA "No se puede hallar un promedio con 0 o menos notas."
+	FIN SI
+FIN 

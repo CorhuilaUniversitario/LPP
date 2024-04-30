@@ -1,0 +1,7 @@
+ENTERO i
+INICIO
+	i<-0
+	PARA i<-0 HASTA 10 HAGA 
+		ESCRIBA i, " "		
+	FIN PARA 
+FIN

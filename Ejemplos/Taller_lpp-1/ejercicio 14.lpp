@@ -1,0 +1,7 @@
+real pulsaciones, edad , pps
+inicio
+escriba " ingrese su edad o la de otra persona : "
+lea edad 
+pps<-(220-edad)/10
+escriba  "segun la edad las pulsaciones por 10 segundos deben ser semejantes a : " , pps
+fin

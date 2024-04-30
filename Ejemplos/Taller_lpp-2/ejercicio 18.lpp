@@ -1,0 +1,45 @@
+
+
+
+reaL nro1 , nro2 
+inicio
+escriba "ingrese un numero : " 
+lea nro1
+escriba "ingrese otro numero : " 
+lea nro2
+
+si (nro1<0) y (nro2<0) entonces 
+escriba "los signos de ambos numeros son iguales por lo tanto no se imprimen "
+
+sino
+si (nro1>0) y (nro2>0) entonces 
+escriba "los signos de ambos numeros son iguales por lo tanto no se imprimen "
+
+sino 
+si (nro1=0) y (nro2=0) entonces 
+escriba "los nummeros son iguales a cero por lo tanto no  se imprime "
+
+
+
+sino
+si (nro1<0) y (nro2>0) entonces 
+escriba "los numeros tienen signos diferentes "
+escriba  "nro1 : " , nro1 , "y"  , "  nro2 : "  ,nro2
+
+sino
+si (nro1>0) y (nro2<0) entonces 
+escriba "los numeros tienen signos diferentes "
+escriba  "nro1 : " , nro1 , "y"  , "  nro2 : "  ,nro2
+
+
+fin si
+fin si
+fin si
+fin si
+fin si
+
+ fin
+
+
+
+

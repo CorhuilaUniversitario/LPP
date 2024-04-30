@@ -1,0 +1,28 @@
+/*
+----------------------------------------------------------------------------------------------------------------------------
+		AUTOR: NICOLAS TELLO MENDEZ  CODIGO: 9022224149
+----------------------------------------------------------------------------------------------------------------------------
+	Mostrar la tabla de multiplicar de un número elegido por el usuario, solo se muestra la tabla de multiplicar entre el 1-10
+*/
+
+Entero Num, Mult, Res
+
+INICIO
+
+	Escriba "Digite un Numero de 1 a 10: "
+	Lea Num
+	
+	Si (Num<1) O (Num>10) Entonces
+		Escriba "Error! Ha digitado un valor diferente"
+		
+	Sino
+		Para Mult<-0 Hasta 10 Haga
+			Res<-Num*Mult
+			
+			Llamar Nueva_linea
+			Escriba Num," x ",Mult," = ", Res
+		Fin para
+		
+	Fin si
+		
+FIN

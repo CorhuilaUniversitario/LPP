@@ -1,0 +1,53 @@
+/*
+	totInv -> Total Inversion
+	invPer1 -> Inversion Persona 1
+	invPer2 -> Inversion Persona 2
+	invPer3 -> Inversion Persona 3
+	porPer1 -> Porcentaje Persona 1
+	porPer2 -> Porcentaje Persona 2
+	porPer3 -> Porcentaje Persona 3
+*/
+REAL totInv, invPer1,invPer2,invPer3,porPer1,porPer2,porPer3
+CADENA [30] nomPer1, nomPer2, nomPer3
+INICIO 
+	//Inicailziar variables
+	
+	//Entrada de datos 
+	ESCRIBA "Digite nombre de la persona 1: "
+	LEA nomPer1
+	ESCRIBA "Digite la cantidad invertida: "
+	LEA invPer1
+	
+	ESCRIBA "Digite nombre de la persona 2: "
+	LEA nomPer2
+	ESCRIBA "Digite la cantidad invertida: "
+	LEA invPer2
+	
+	ESCRIBA "Digite nombre de la persona 3: "
+	LEA nomPer3
+	ESCRIBA "Digite la cantidad invertida: "
+	LEA invPer3
+	
+	//Proceso
+	SI(invPer1>0) Y (invPer2>0) Y (invPer3>0)ENTONCES
+		totInv<-invPer1+invPer2+invPer3
+		
+		porPer1<-(invPer1/totInv)*100
+		porPer2<-(invPer2/totInv)*100
+		porPer3<-(invPer3/totInv)*100
+		
+		//Salida
+		ESCRIBA "Total de la inversion: ",totInv
+		LLAMAR Nueva_linea
+		ESCRIBA "Persona 1: ",nomPer1," - Invirtio $",invPer1,", el porcentaje correspondiente es: ",porPer1
+		LLAMAR Nueva_linea
+		ESCRIBA "Persona 2: ",nomPer2," - Invirtio $",invPer2,", el porcentaje correspondiente es: ",porPer2
+		LLAMAR Nueva_linea
+		ESCRIBA "Persona 1: ",nomPer3," - Invirtio $",invPer3,", el porcentaje correspondiente es: ",porPer3
+	SINO
+		ESCRIBA "ha ingresado un dato no valido."
+	FIN SI
+	
+	
+
+FIN

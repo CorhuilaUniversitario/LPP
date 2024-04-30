@@ -1,0 +1,15 @@
+real t_lunes,t_miercoles,t_viernes,recorrido,ruta,operacion_t,operacion
+inicio
+escriba "ingrese cuanto marco el cronometro el dia lunes al terminar su recorrido : "
+lea t_lunes
+escriba "ingrese cuanto marco el cronometro el dia miercoles al terminar su recorrido : "
+lea t_miercoles
+escriba "ingrese cuanto marco el cronometro el dia viernes al terminar su recorrido : "
+lea t_viernes
+operacion<-(t_lunes+t_miercoles+t_viernes)/3
+operacion_t<-t_lunes+t_miercoles+t_viernes
+llamar nueva_linea
+escriba "en estos 3 dias de la semana recorrio 3  veces la misma ruta por un total de: "  ,operacion_t
+llamar nueva_linea
+escriba " el promedio del recorrido de la ruta en una semana cualesquiera es : " ,operacion
+fin

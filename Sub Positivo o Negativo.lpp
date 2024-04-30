@@ -1,0 +1,20 @@
+//leer un real e imprimir si el numero es positivo o negativo
+
+REAL numero 	
+
+INICIO
+//tomar datos	
+	escriba "Digite un real: "
+	lea numero
+	
+	SI (numero<>0) ENTONCES	
+		SI (numero>0) ENTONCES
+		escriba "numero positivo"	
+		SINO
+		escriba "numero negativo"
+		FIN SI	
+	SINO
+	escriba "error"
+	FIN SI
+	
+FIN

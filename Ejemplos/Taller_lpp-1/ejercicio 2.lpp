@@ -1,0 +1,14 @@
+real operacion,valor_x,valor_y,valor_z
+inicio
+valor_x <- 20
+valor_y <- 10
+valor_z <- 1
+escriba "el valor de x es: 20"
+llamar nueva_linea
+escriba "el valor de y es: 10"
+llamar nueva_linea
+escriba "el valor de z es: 1"
+llamar nueva_linea
+operacion<-(((valor_x^2)+valor_y)/3)-((valor_z*5)/20)+2^(1/2)
+escriba "el resultado de la operacion es: " , operacion
+fin

@@ -1,0 +1,27 @@
+real np1,np2,np3 ,exam_final,trab_final,prom_par,porc_prom, por_exf,por_trabf,calif_final
+inicio 
+escriba "ingrese nota del priemer parcial : "
+lea np1
+escriba "ingrese nota del segundo parcial : "
+lea np2
+escriba "ingrese nota del tercer parcial :  "
+lea np3
+prom_par<-(np1+np2+np3)/3
+porc_prom<-(prom_par*55)/100
+llamar nueva_linea
+escriba "ingrese nota del examen final : "
+lea exam_final
+por_exf<-(exam_final*30)/100
+llamar nueva_linea
+escriba "ingrese nota del trabajo final: "
+lea trab_final
+por_trabf<-(trab_final*15)/100
+llamar nueva_linea
+calif_final<-porc_prom+por_exf+por_trabf
+llamar nueva_linea
+escriba "la calificacion final del alumnmo es:" , calif_final
+llamar nueva_linea
+fin
+
+
+

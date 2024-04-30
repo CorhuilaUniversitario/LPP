@@ -1,0 +1,42 @@
+/* 	Leer el sueldo de 3 empleados, y aplicarles un aumento del 10, 12, y 15% respectivamente, mostrar los resultados. */
+
+REAL sueldo_1, sueldo_2, sueldo_3, aumento_10, aumento_12, aumento_15, sueldofinal_1, sueldofinal_2, sueldofinal_3
+	 
+INICIO
+	//Iniciar variable
+	sueldo_1<-0
+	sueldo_2<-0
+	sueldo_3<-0
+	
+	aumento_10<-sueldo_1*0.10
+	aumento_12<-sueldo_2*0.12
+	aumento_15<-sueldo_3*0.15
+	
+	sueldofinal_1<-sueldo_1+aumento_10
+	sueldofinal_2<-sueldo_2+aumento_12
+	sueldofinal_3<-sueldo_3+aumento_15
+	
+	//proceso
+	ESCRIBA "Ingrese el sueldo del primer empleado: "
+	LEA sueldo_1
+	
+	ESCRIBA "Ingrese el sueldo del segundo empleado: "
+	LEA sueldo_2
+	
+	ESCRIBA "Ingrese el sueldo del tercer empleado: "
+	LEA sueldo_3
+	
+	aumento_10<-sueldo_1*0.10
+	aumento_12<-sueldo_2*0.12
+	aumento_15<-sueldo_3*0.15
+	
+	sueldofinal_1<-sueldo_1+aumento_10
+	sueldofinal_2<-sueldo_2+aumento_12
+	sueldofinal_3<-sueldo_3+aumento_15
+	
+	//salida
+	ESCRIBA "°Resultado del primer empleado con 10% de aumento: ",sueldofinal_1
+	ESCRIBA "  °Resultado del segundo empleado con 12% de aumento: ",sueldofinal_2
+	ESCRIBA "  °Resultado del tercer empleado con 15% de aumento: ",sueldofinal_3
+	
+FIN 

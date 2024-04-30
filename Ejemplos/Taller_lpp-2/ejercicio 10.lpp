@@ -1,0 +1,50 @@
+//Imprima el nombre y la edad de una persona, si esta es mayor de edad, mujer y casada. Si 	es hombre y soltero imprima sólo su nombre, si no cumple alguno de los requisitos,    	imprimir un mensaje "No cumple con lo pedido".//
+
+
+cadena [25] nombre, sexo, estado
+entero   edad 
+
+inicio
+ escriba " ingrese el nombre : " 
+ lea nombre
+ 
+ escriba "ingrese si es hombre copie 'M' , si es mujer copie 'F' : "
+ lea sexo
+ 
+ escriba "ingrese la edad "
+ lea edad 
+  
+ escriba "igrese si es soltero 'S' , si es casado 'C' y si es diferente a los anteriores copie 'A' : "
+ lea  estado
+ 
+ 
+ 
+ si  ((sexo="F") o (sexo="f")) y (edad>18) y ((estado="C") o (estado="c"))
+ entonces
+ escriba  nombre , " tiene una edad de : " , edad
+
+ sino si ((sexo="M") o (sexo="m")) y ((estado="S")o (estado="s")) entonces 
+ 
+ escriba nombre 
+ 
+ sino
+si ((sexo="F") o (sexo="f")) y (edad<18) y ((estado="S") o (estado="s"))  o ((estado="A") o (estado="a"))
+ entonces
+ escriba "no cumple con lo pedido "
+  
+ sino  
+ si ((sexo="M") o (sexo="m")) y ((estado="S") o (estado="s")) o ((estado="A") o (estado="a"))
+  entonces 
+ escriba "no cumple con lo pedido "
+ 
+ 
+ 
+ fin si
+ fin si
+ fin si
+ fin si
+ 
+ 
+ fin
+ 
+ 

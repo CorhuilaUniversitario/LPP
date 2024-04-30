@@ -1,0 +1,34 @@
+/*
+	nombre
+	tieRut1 -> Tiempo ruta lunes
+	tieRut2 -> Tiempo ruta miércoles
+	tieRut3 -> Tiempo ruta viernes
+	promedio
+*/
+CADENA [30] nombre
+REAL tieRut1, tieRut2, tieRut3,	promedio
+
+INICIO 
+
+	//Captura de datos
+	ESCRIBA "Digite su nombre: "
+	LEA nombre	
+	
+	ESCRIBA "Digite el tiempo del dia lunes: "
+	LEA tieRut1
+	
+	ESCRIBA "Digite el tiempo del dia miercoles: "
+	LEA tieRut2
+	
+	ESCRIBA "Digite el tiempo del dia viernes: "
+	LEA tieRut3
+	
+	SI(tieRut1<=0)O (tieRut2<=0) O (tieRut3<=0)ENTONCES
+		ESCRIBA "Ha ingresado datos no validos."
+	SINO 
+		promedio<-(tieRut1+tieRut2+tieRut3)/3
+		
+		//Salida 
+		ESCRIBA nombre," su promedio de la semana fue : ",promedio
+	FIN SI
+FIN

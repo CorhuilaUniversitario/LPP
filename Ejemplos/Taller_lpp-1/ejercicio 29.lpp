@@ -1,0 +1,9 @@
+real costoArt, peso, total
+inicio
+escriba "Ingresar el costo del articulo por kilo: "
+lea costoArt
+escriba "ingresar peso total del articulo : "
+lea peso
+total<- peso*costoArt
+escriba "el costo total del articulo es : ", total
+fin

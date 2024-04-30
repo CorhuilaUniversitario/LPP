@@ -1,0 +1,35 @@
+entero a, b ,c
+inicio
+ escriba "ingrese un  numero : "
+ lea  a
+ escriba "ingrese un  numero : "
+ lea  b
+ escriba "ingrese un  numero : "
+ lea  c
+ 
+ 
+ //para a//
+ si (a mod 7=0) entonces
+    escriba  a,"este valor es multiplo de 7 "
+    llamar nueva_linea
+sino 
+   escriba   a,"este valor no es multiple de 7 "
+    
+//para b//
+ si (b mod 7=0) entonces
+    escriba  b,"este valor es multiplo de 7 " 
+sino
+   escriba   b,"este valor no es multiple de 7 "
+    
+//para c//
+ si (c mod 7=0) entonces
+    escriba  c,"este valor es multiplo de 7 "
+sino
+   escriba   c,"este valor no es multiple de 7 "
+   
+
+fin si 
+fin si
+fin si
+      
+fin

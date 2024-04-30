@@ -1,0 +1,8 @@
+real sal_obrero ,incremento, operacion 
+inicio
+escriba "ingrese valor del salario anterior del  obrero :"
+lea sal_obrero
+operacion<-sal_obrero+(sal_obrero*25)/100 
+escriba "el salario con incremento del obrero es: " , operacion
+fin
+

@@ -1,0 +1,15 @@
+entero division, num1 , num2
+inicio
+escriba "ingrese num 1 :"
+lea num1
+escriba "ingrese num 2  :"
+lea num2
+si num2=0 entonces
+escriba "operacion indefinida"
+llamar nueva_linea
+sino
+si num2>0 entonces
+escriba  "operacion definida  "
+fin si 
+fin si
+fin

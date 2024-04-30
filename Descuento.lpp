@@ -1,0 +1,39 @@
+/*
+----------------------------------------------------------------------------------------------------------------------------
+					  AUTORES                   CODIGO
+				NICOLAS TELLO MENDEZ          9022224149
+				MARIA CELESTE DUSSAN OSPINA   9022224149
+----------------------------------------------------------------------------------------------------------------------------
+	En un supermercado se hace una promoción, mediante la cual el cliente obtiene un
+	descuento dependiendo de un número que se escoge al azar. Si el numero escogido es
+	menor que 74 el descuento es del 15% sobre el total de la compra, si es mayor o igual a 74
+	el descuento es del 20%. Obtener cuánto dinero se le descuenta.
+*/
+
+REAL ValorCompra, NumSelec, Descuento
+
+INICIO
+	//Toma de datos
+	Escriba "Digite el valor de su compra: $"
+	Lea ValorCompra
+	
+	Escriba "Selecione un numero al azar: "
+	Lea NumSelec
+	
+	//Proceso
+	SI (NumSelec<74) ENTONCES
+		Descuento<-ValorCompra*0.15
+		
+	SINO
+		SI (NumSelec=74) O (NumSelec>74) ENTONCES
+		Descuento<-ValorCompra*0.20
+		FIN SI
+		
+	FIN SI
+			Llamar Nueva_Linea
+		//Resultado
+		Escriba "El total a pagar de su compra es de: $",ValorCompra-Descuento
+			Llamar Nueva_Linea
+		Escriba "El descuento aplicado en la compra es de: $",Descuento
+		
+FIN

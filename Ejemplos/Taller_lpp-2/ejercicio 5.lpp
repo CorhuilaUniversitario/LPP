@@ -1,0 +1,28 @@
+real x, yy,z,pareja,np
+inicio
+escriba "ingrese un número  : "
+lea x
+escriba "ingrese un número  : "
+lea yy
+escriba "ingrese un número  : "
+lea z
+
+si (x=yy)entonces
+pareja<-x
+escriba "hacen pareja"
+sino si(x=z)entonces
+pareja<-x
+escriba "hacen pareja"
+sino si(yy=z)entonces
+pareja<-yy
+escriba "hacen pareja"
+
+sino 
+escriba "No hacen pareja"
+
+fin si 
+fin si
+fin si 
+
+
+fin 

@@ -1,0 +1,18 @@
+real persona_1,persona_2,persona_3, calculo, operacion_1,operacion_2,operacion_3,porciento
+inicio
+escriba "ingresa valor en dinero que invirtio la persona 1 :"
+lea persona_1
+escriba "ingresa valor en dinero que invirtio la persona 2 :"
+lea persona_2
+escriba "ingresa valor en dinero que invirtio la persona 3 :"
+lea persona_3
+calculo<-persona_1+persona_2+persona_3
+operacion_1<-(calculo*persona_1)/100
+operacion_2<-(calculo*persona_2)/100 
+operacion_3<-(calculo*persona_3)/100
+escriba "la persona numero 1 invirtio el :",operacion_1
+llamar nueva_linea 
+escriba "la persona numero 2 invirtio el :",operacion_2
+llamar nueva_linea 
+escriba "la persona numero 3 invirtio el :",operacion_3
+fin

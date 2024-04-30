@@ -1,0 +1,8 @@
+entero  km,hrs,operacion
+inicio
+km<-160
+hrs<-5
+operacion<-km/hrs
+escriba "la velocidad del auto por hora fue : " , operacion
+fin
+

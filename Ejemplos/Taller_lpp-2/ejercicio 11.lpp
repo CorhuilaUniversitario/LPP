@@ -1,0 +1,19 @@
+entero par, impar , a , num
+inicio
+escriba "ingrese un numero :  "
+lea num
+
+si (num  mod 2=0)  entonces 
+ par<-num^3
+ escriba "el numero es par ,el resultado cubico es : " ,par
+ 
+ 
+ sino 
+ si(num mod 2<>0) entonces 
+ impar<-num^4
+ escriba " el numero es impar , el  resultadoi de su cuarta es : " , impar
+
+
+ fin si
+ fin si
+ fin

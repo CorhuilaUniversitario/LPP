@@ -1,0 +1,50 @@
+/*
+----------------------------------------------------------------------------------------------------------------------------
+		AUTOR: NICOLAS TELLO MENDEZ  CODIGO: 9022224149
+----------------------------------------------------------------------------------------------------------------------------
+	Realizar n cantidad de compras, de ello, solicitar nombre del producto, valor unitario, cantidad, luego mostrar el total a pagar. 
+	Por último mostrar el valor total a pagar. 
+*/
+
+
+Cadena [30] NomPro
+Entero i, Cantidad
+Real ValorUni, CantPro, ValorTotal, TotalPago
+
+
+INICIO
+	Escriba "Digite la cantidad de productos a comprar: "
+	Lea Cantidad
+	
+	Si (Cantidad<=0) Entonces
+		Escriba "Error! Ha digitado un valor erroneo" 
+	Sino
+		Para i<-1 Hasta Cantidad Haga
+		
+			Llamar Nueva_Linea
+			Llamar Nueva_Linea
+			
+			Escriba "Digite el nombre del producto: "
+			Lea NomPro
+			
+			Escriba "Digite el valor Unitario: "
+			Lea ValorUni
+			
+			Escriba "Digite la cantidad: "
+			Lea CantPro
+			
+			ValorTotal<-(ValorUni*CantPro)
+			
+			Escriba "El valor Total del producto es: ",ValorTotal
+			
+			TotalPago<-TotalPago+ValorTotal
+			
+		Fin para
+		
+		Llamar Nueva_Linea
+		Llamar Nueva_Linea
+		Escriba "El Costo total de los productos es: ",TotalPago
+		
+	Fin si
+	
+FIN

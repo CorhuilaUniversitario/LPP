@@ -1,0 +1,55 @@
+/*
+----------------------------------------------------------------------------------------------------------------------------
+		AUTOR: NICOLAS TELLO MENDEZ  CODIGO: 9022224149
+----------------------------------------------------------------------------------------------------------------------------
+
+Se requiere obtener el promedio de edades del grupo de lógica programación. Se debe obtener: promedio mujeres, promedio hombres y promedio general.
+*/
+
+Entero Num, i, Sexo, Edad, EdadMuj, EdadHom, NuMuj, NuHom, PromMuj, PromHom
+
+INICIO
+	Escriba "Digite el numero de personas del grupo de logica programacion: "
+	Lea Num
+	i<-1
+	Edad<-0
+	EdadMuj<-0
+	EdadHom<-0
+	NuMuj<-0
+	NuHom<-0
+	PromMuj<-0
+	PromHom<-0
+	Mientras i <= Num Haga
+		Llamar Nueva_Linea
+		Escriba "Escriba el numero de acuerdo al sexo"
+		Llamar Nueva_Linea
+		Escriba "1 - Mujeres"
+		Llamar Nueva_linea
+		Escriba "2 - Hombres"
+		Llamar Nueva_Linea
+		Lea Sexo
+		Escriba "Digite la edad: "
+		Lea Edad
+			
+		Si (Sexo=1) Entonces
+			EdadMuj <- EdadMuj+Edad
+			NuMuj <- NuMuj+1
+			PromMuj <- EdadMuj/NuMuj
+		Sino
+			Si (Sexo=2) Entonces
+				EdadHom <- EdadHom+Edad
+				NuHom <- NuHom+1
+				PromHom <- EdadHom/NuHom
+			Fin si			
+		Fin si
+		i <- i+1
+	Fin mientras 	
+
+	Escriba "El promedio general de edad del grupo es: ",(EdadMuj+EdadHom)/Num
+	Llamar Nueva_Linea
+	Escriba "El promedio de edad de mujeres del grupo es: ",PromMuj
+	Llamar Nueva_Linea
+	Escriba "El promedio de edad de hombres del grupo es: ",PromHom
+
+
+FIN

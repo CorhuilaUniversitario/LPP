@@ -1,0 +1,15 @@
+entero edad_pedro, edad_ana, edad_alberto, edad_madre
+inicio
+escriba "ingresar edad de pedro: "
+lea edad_pedro
+edad_ana <- (4/3)*edad_pedro
+edad_alberto <- (2/3)*edad_pedro
+edad_madre <- edad_pedro + edad_ana + edad_alberto
+escriba "la edad de Ana es: ", edad_ana
+llamar nueva_linea
+escriba "la edad de Alberto es: ", edad_alberto
+llamar nueva_linea
+escriba "la edad de la madre es: ", edad_madre
+llamar nueva_linea
+escriba "la edad de Pedro es: ", edad_pedro
+fin

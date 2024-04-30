@@ -1,0 +1,52 @@
+/* 
+----------------------------------------------------------------------------------------------------------------------------
+					  AUTORES                   CODIGO
+				NICOLAS TELLO MENDEZ          9022224149
+				MARIA CELESTE DUSSAN OSPINA   9022224149
+----------------------------------------------------------------------------------------------------------------------------
+	Leer dos números e imprimir cuál de los dos números es mayor y cual es menor.
+*/
+
+ENTERO Num1, Num2, NuMenor, NuMayor
+
+INICIO
+	//Toma de datos
+	Escriba "Digite el primer numero: "
+	Lea Num1
+	
+	Escriba "Digite el Segundo numero: "
+	Lea Num2
+	
+	//Proceso
+	SI (Num1=Num2) ENTONCES
+		Escriba "ERROR! Ha ingresado Numeros iguales."
+	SINO
+		//Numero Mayor
+		SI (Num1>Num2) ENTONCES
+		NuMayor<-Num1
+		FIN SI
+		
+		SI (Num2>Num1) ENTONCES
+		NuMayor<-Num2
+		FIN SI
+		
+		//Numero Menor
+		SI (Num1<Num2) ENTONCES
+		NuMenor<-Num1
+		FIN SI
+		
+		SI (Num2<Num1) ENTONCES
+		NuMenor<-Num2
+		FIN SI
+			Llamar Nueva_Linea
+	
+		//Resultado
+		Escriba "Los datos Ingresados son: ",Num1,", ",Num2
+			Llamar Nueva_Linea
+		Escriba "El numero Menor es: ",NuMenor
+			Llamar Nueva_Linea
+		Escriba "El numero Mayor es: ",NuMayor
+		
+	FIN SI
+	
+FIN

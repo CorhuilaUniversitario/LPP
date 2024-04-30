@@ -1,0 +1,9 @@
+real can_dolar , cant_pesos, transformacion
+inicio
+escriba "ingrese valor en pesos : "
+lea cant_pesos
+escriba  "ingrese valor actual del dolar :" 
+lea can_dolar
+transformacion<-cant_pesos/can_dolar
+escriba " la transformacion de pesos a dolares dio lugar a  : " , transformacion , "dolares"
+fin

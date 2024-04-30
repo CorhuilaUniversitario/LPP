@@ -1,0 +1,13 @@
+/*
+Crear un programa que imprima los numeros pares en rango de 100-300
+*/
+
+ENTERO i
+INICIO 
+	i<-0
+	PARA i<-100 HASTA 300 HAGA 
+		SI(i MOD 2 = 0)ENTONCES
+			ESCRIBA i," "
+		FIN SI
+	FIN PARA  
+FIN 

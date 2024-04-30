@@ -1,0 +1,19 @@
+cadena [15]nombre
+entero edad 
+
+inicio 
+ escriba "ingese nombre : "
+lea nombre
+ escriba "ingresar edad  : "
+lea edad
+
+si edad>=18 entonces
+escriba "usted puede votar "
+sino 
+ si edad<18 entonces 
+ escriba "usted es menor de edad , lo sentimos no puede votar "
+ 
+ fin si 
+ fin si 
+ fin
+ 

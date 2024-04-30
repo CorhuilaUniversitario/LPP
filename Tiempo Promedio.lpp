@@ -1,0 +1,35 @@
+/*
+----------------------------------------------------------------------------------------------------------------------------
+					  AUTORES                   CODIGO
+				NICOLAS TELLO MENDEZ          9022224149
+				MARIA CELESTE DUSSAN OSPINA   9022224149
+----------------------------------------------------------------------------------------------------------------------------
+	Todos los lunes, miércoles y viernes, una persona corre la misma ruta y cronometra los
+	tiempos obtenidos. Determinar el tiempo promedio que la persona tarda en recorrer la
+	ruta en una semana cualquiera.
+*/
+
+REAL TieLu, TieMi, TieVi, PromTol
+
+INICIO
+	//Toma de Datos
+	Escriba "FAVOR DE INGRESAR EL TIEMPO EN MINUTOS"
+		Llamar Nueva_Linea
+		Llamar Nueva_Linea
+	Escriba "Digite el tiempo obtenido el Lunes: "
+	Lea TieLu
+		Llamar Nueva_Linea	
+	Escriba "Digite el tiempo obtenido el Miercoles: "
+	Lea TieMi
+		Llamar Nueva_Linea	
+	Escriba "Digite el tiempo obtenido el Viernes: "
+	Lea TieVi
+		Llamar Nueva_Linea
+		
+	//Proceso
+	PromTol<-(TieLu+TieMi+TieVi)/3
+
+	//Resultado
+	Escriba "El Promedio de la persona en recorrer la ruta es de: ",PromTol," Minutos"
+
+FIN

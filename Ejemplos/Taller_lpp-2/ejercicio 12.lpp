@@ -1,0 +1,20 @@
+real num
+inicio
+escriba "ingrese  el numero que la cp va a reconocer : "
+lea num
+
+si (num>=1) entonces 
+escriba   "  el numero es positivo " 
+
+sino 
+si (num<0) entonces 
+escriba " el numero es negativo "
+
+sino 
+si (num=0) entonces
+escriba " el numero es positivo e igual a cero (0) "
+
+fin si
+fin si
+fin si
+fin

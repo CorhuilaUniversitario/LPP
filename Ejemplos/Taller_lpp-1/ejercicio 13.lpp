@@ -1,0 +1,12 @@
+real volumen ,temperatura, masa_aire ,presion
+inicio
+escriba "valor de presion:  "
+lea presion
+escriba " ingrese  valor de temperatura : "
+lea temperatura
+escriba "ingrese valor del volumen : "
+lea volumen
+masa_aire<-(presion * volumen)/(0.37 * (temperatura + 460))
+escriba " el valor total de la masa calculada en este caso es: " , masa_aire
+fin
+

@@ -1,0 +1,17 @@
+REAL numero
+INICIO 
+	
+	//Entrada de datos
+	ESCRIBA "Digite un real: "
+	LEA numero
+	
+	SI(numero=0)ENTONCES
+		ESCRIBA "Numero neutro."
+	SINO
+		SI(numero<0)ENTONCES
+			ESCRIBA "Numero negativo"
+		SINO
+			ESCRIBA "Numero positivo"
+		FIN SI
+	FIN SI
+FIN

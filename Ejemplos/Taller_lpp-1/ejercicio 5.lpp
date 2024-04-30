@@ -1,0 +1,11 @@
+real sal_bruto , ret_fuente, sal_neto, sal_base
+inicio
+sal_bruto<-5000*4
+ret_fuente<-(sal_bruto*12.5)/100
+sal_neto<-sal_bruto-ret_fuente
+escriba "el salario bruto es :" ,sal_bruto
+llamar nueva_linea
+escriba  " la retencion de la fuenete es:" ,ret_fuente
+llamar nueva_linea
+escriba  " el salario neto es:" , sal_neto
+fin

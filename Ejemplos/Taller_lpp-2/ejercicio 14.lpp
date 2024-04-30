@@ -1,0 +1,19 @@
+real num , pos_a_neg, neg_a_pos
+inicio
+escriba "ingrese un numero : " 
+lea num
+
+si num>0 entonces 
+pos_a_neg<-(num*-1)
+escriba " el numero a sido modificado por :"  , pos_a_neg
+
+sino 
+si num<0 entonces 
+neg_a_pos<-num*-1
+escriba " el numero a sido modificado por : " ,  neg_a_pos
+
+
+fin si 
+fin si
+fin
+

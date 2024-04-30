@@ -1,0 +1,31 @@
+/*
+----------------------------------------------------------------------------------------------------------------------------
+		AUTOR: NICOLAS TELLO MENDEZ  CODIGO: 9022224149
+----------------------------------------------------------------------------------------------------------------------------
+
+	Hallar los números primos entre el rango 1 - 100. 
+*/
+
+Entero i, Contador, Numero
+
+INICIO 
+	Para Numero<-1 hasta 100 haga
+		i<-1
+		Contador<-0
+		
+		Mientras i <= Numero haga
+			Si (Numero Mod i = 0) entonces
+				Contador <- Contador+1
+			Fin si
+			
+			i<-i+1
+		Fin Mientras
+		
+			Si (Contador = 2) entonces
+				Escriba "El numero " ,Numero," es primo"
+				Llamar Nueva_linea 
+			Fin si
+			
+	Fin para
+
+FIN

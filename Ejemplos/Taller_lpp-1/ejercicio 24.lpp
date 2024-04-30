@@ -1,0 +1,7 @@
+real gf, gc
+inicio
+escriba "ingresar el valor en grados Farenheit "
+lea gf
+gc<- 5/9*(gf-32)
+escriba "El valor en grados centigrados es: ",gc
+fin

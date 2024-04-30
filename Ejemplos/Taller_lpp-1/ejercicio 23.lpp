@@ -1,0 +1,7 @@
+real lado, super
+inicio
+escriba "Ingresas un lado del cudrado"
+lea lado
+super<- lado*lado
+escriba "La superficie del cuadrado es: ",super
+fin

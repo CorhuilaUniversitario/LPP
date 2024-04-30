@@ -1,0 +1,28 @@
+
+	
+	
+real v_hora,hrs_s,recargo,pago_mas_recargo,pago_normail,semanal,pago_normal
+inicio 
+escriba " ingrese el valor de la hora :" 
+lea v_hora
+escriba " ingrese  horas trabajadas a la semana:  " 
+lea hrs_s
+
+si  hrs_s>48 entonces 
+semanal<-hrs_s*v_hora
+recargo<-((semanal*35)/100)
+pago_mas_recargo<-semanal+recargo
+
+escriba " su pago total con recargo es : " , pago_mas_recargo
+sino 
+
+si  hrs_s=48 entonces 
+pago_normal<-hrs_s*v_hora
+
+escriba "su pago total sin recargo es : " , pago_normal
+ fin si 
+ fin si 
+
+ fin
+
+

@@ -1,0 +1,28 @@
+/*	 Desarrollar un algoritmo, que permita ingresar una cantidad en metros y la convierta a Centímetros, Kilómetros, Pies, pulgadas. */
+
+REAL metros, centimetros, kilometros, pies, pulgadas
+
+INICIO
+	//iniciar variable
+	metros<-0
+	centimetros<-metros*100
+	kilometros<-metros/1000
+	pies<-metros*3.281
+	pulgadas<-metros*39.37
+	
+	//proceso
+	ESCRIBA "Digite el valor en metros :"
+	LEA metros
+	
+	centimetros<-metros*100
+	kilometros<-metros/1000
+	pies<-metros*3.281
+	pulgadas<-metros*39.37
+	
+	//salida
+	ESCRIBA "°El valor en centimetros es: ",centimetros," centimetros"
+	ESCRIBA " °El valor en kilometros es: ",kilometros," kilometros"
+	ESCRIBA " °El valor en pies es: ",pies," pies"
+	ESCRIBA " °El valor en pulgadas es: ",pulgadas," pulgadas"
+	
+FIN

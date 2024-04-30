@@ -1,0 +1,30 @@
+REAL compra, descuento,valorPagar
+ENTERO balota
+
+INICIO 
+	//Inicialziar variables
+	
+	//Entrada de datos 
+	ESCRIBA "Digite el valor de su compra: "
+	LEA compra
+	
+	ESCRIBA "Estimado cliente escoga un numero al azar: "
+	LEA balota
+	
+	SI(compra>0)ENTONCES
+		SI(balota<74)ENTONCES
+			descuento<-compra*0.15
+		SINO
+			descuento<-compra*0.20
+		FIN SI
+		valorPagar<-compra-descuento
+		
+		ESCRIBA "Total compra : $",compra
+		LLAMAR Nueva_linea
+		ESCRIBA "Valor a pagar: $",valorPagar
+		LLAMAR Nueva_linea
+		ESCRIBA "El descuento obtenido es: $",descuento
+	SINO
+		ESCRIBA "Ha ingresado un valor no valido para el programa."
+	FIN SI
+FIN

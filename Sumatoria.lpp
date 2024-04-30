@@ -1,0 +1,22 @@
+/*
+----------------------------------------------------------------------------------------------------------------------------
+		AUTOR: NICOLAS TELLO MENDEZ  CODIGO: 9022224149
+----------------------------------------------------------------------------------------------------------------------------
+	Leer un número (n) e imprimir la sumatoria de 1 hasta
+*/
+
+Entero Num, i, Res
+
+INICIO
+
+	Escriba "Digite un Numero: "
+	Lea Num
+	
+	Para i<-0 Hasta Num Haga
+		Res <-i+1
+		Llamar Nueva_linea
+		Escriba 1," + ",i, " = ", Res
+		
+	Fin para
+	
+FIN

@@ -1,0 +1,25 @@
+cadena [30] nombre, codigo
+real sal_bruto,sal_neto,ht_m,rf,vht,total
+inicio 
+escriba "ingrese el nombre del trabajador :  " 
+lea nombre
+escriba "ingrese codigo del trabajador:  "
+lea codigo
+escriba "ingrese las horas trabajadas en el mes: "
+lea ht_m
+escriba "ingrese valor de pago por hora:"
+lea vht
+escriba "ingresar retencion en la fuente: "
+lea rf
+sal_bruto<-ht_m*vht
+total<-(sal_bruto*rf)/100
+sal_neto<-sal_bruto-total
+escriba "el nombre de trabajador es: ", nombre
+llamar nueva_linea
+escriba "el codigo del trabajador es: ", codigo
+llamar nueva_linea
+escriba "el salario bruto del trabajador es: ", sal_bruto
+llamar nueva_linea
+escriba "el salario neto del trabajador es: ", sal_neto
+llamar nueva_linea
+fin

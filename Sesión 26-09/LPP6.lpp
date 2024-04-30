@@ -1,0 +1,43 @@
+/*
+	Crear un programa que imprima los número digitos.
+	
+	Contador: Variable que acumula un valor, pero esta se le suma una cantidad especifica 
+	por cada iteración, puede ser de 1.1, 2.2, 3.3 . n.n
+	c <- c + 1
+	Nota: Debe garantizar que esta variable se inicialice.
+*/
+ENTERO n,i
+INICIO 
+	i<-1
+	n<-0
+		
+	ESCRIBA n
+	
+	n<-n+i
+	ESCRIBA "-",n
+	
+	n<-n+i
+	ESCRIBA ", ",n
+	
+	n<-n+i
+	ESCRIBA ", ",n
+	
+	n<-n+i
+	ESCRIBA ", ",n
+	
+	n<-n+i
+	ESCRIBA ", ",n
+	
+	n<-n+i
+	ESCRIBA ", ",n
+	
+	n<-n+i
+	ESCRIBA ", ",n
+	
+	n<-n+i
+	ESCRIBA ", ",n
+	
+	n<-n+i
+	ESCRIBA ", ",n
+	
+FIN

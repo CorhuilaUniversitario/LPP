@@ -1,0 +1,115 @@
+[]
+{}
+()
+
+[{10*3/(2+4*4)}]
+
+[{10*3/(2+16)}]
+[{10*3/18}]
+30/18
+
+Cualitativos/Cuantitativos
+
+Formas de solucionar: 
+	Pseudocódigo
+	Diagrama de flujo
+	
+	Conceptos básicos (variables, constantes, expresiones, tipos de datos, operadores).
+	
+	*Variables: Elemento compuesto por uno o varios caracteres, que permite almancenar información. Para definir una variables se debe inicar desde A-a hasta la Z-z, excluyendo la "ñ". 
+	Se puede concatenar(unir) dígitos luego de cumplir la anterior condición.
+	Se puede concantenar unicamente los caracteres especiales _ 
+	
+	¿Para qué sirve?
+	Almacenar información, de acuerdo al tipo de datos que esta sea definida. 
+	
+	Nota: No se puede definir nombre a una variable con palabras reservadas del sistema. 
+	
+	
+	Ejemplo: Promedio de tres notas: 
+		* Variables: nota_1, nota_2, nota_3, promedio
+	
+	*Constantes: Corresponde a los mismos parámetros de una variables, la única diferencia es que este tipo de variable inica con un valor, y esté nunca cambiará durante la ejecución de la aplicación.
+	
+	Constante del sistema.
+	Constante definidas por el usuario
+	
+	*Expresiones: utilización de los operadores- Operación o formulas tipos de datos
+	
+	2>2   = True
+	False = True
+		False
+		
+	12*3 <> 21 and 22>23
+	36   <> 21 and False
+		True   and False
+		       False
+			   
+	NOt(12+3<>15)
+	NOT(15<>15)
+	NOT(FALSE)
+	TRUE
+	
+	
+	*Tipos de datos
+		Cadena- "String"
+			CARACTER
+			CADENA
+		Númericos: 
+			REAL
+			ENTERO
+		Boolean
+			BOOLEAN (FALSO VERDADERO)
+	
+	
+	
+Ejercicio:
+http://seguridad.unicauca.edu.co/Manual_LPP.pdf
+
+Palabras reservadas
+
+INICIO
+FIN
+CARACTER
+REAL
+ENTERO
+BOOLEANO
+SI
+SINO
+MIENTRAS
+PARA 
+MOD
+DIV
+
+
+Formas de  escribir variables
+	PascalCase
+	calmelCase
+	unders_core
+
+	
+	
+id
+descripcion
+estado
+
+id
+descripcion
+estado
+id_continente
+
+id
+descripcion
+estado
+id_pais
+
+id
+descripcion
+estado
+id_departamento
+
+id
+descripcion
+estado
+id_ciudad
+

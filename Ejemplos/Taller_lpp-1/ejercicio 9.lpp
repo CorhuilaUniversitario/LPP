@@ -1,0 +1,11 @@
+real invercion,ganancia,calculo
+inicio
+escriba " ingrese valor de capital o invercion : "
+lea invercion 
+calculo<-(invercion*2)/100
+ganancia<-invercion+calculo
+escriba "la invercion fue de: " , invercion
+llamar nueva_linea
+escriba " la gancia del invercionista  es : " , ganancia
+
+fin

@@ -1,0 +1,18 @@
+real num , sum , mul
+
+inicio
+ escriba "ingrese un numero : "
+ lea num
+ 
+
+ si num>0 entonces 
+ sum<-num+10
+  escriba "el resultado de la suma es : " , sum
+ sino 
+ si num<0 entonces 
+ mul<-num*num
+
+ escriba " el resultado de la multiplicacion es : ", mul
+ fin si 
+ fin si 
+ fin

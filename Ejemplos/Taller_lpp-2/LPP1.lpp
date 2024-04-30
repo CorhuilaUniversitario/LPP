@@ -1,0 +1,39 @@
+//	Se tiene el nombre, número de artículos vendidos, el valor de cada artículo. Calcule el 
+//valor de la compra, tiendo en cuenta lo siguiente: compra 50 o más artículos se le da al 
+//	cliente 10% de descuento; si la compra es menor de 50 artículos no se hace descuento. 	Mostrar el nombre, el total de la venta y el valor del descuento.
+
+entero  compra , art_hogar ,art_alimentos , art_mecan , presupuesto_hogar , articulo , h , descuento , venta ,valor
+
+
+
+ inicio 
+    escriba "ingrese que tipo de articulo  va a comprar , si es un articulo para el hogar ingrese h , si son alimentos o bebidas  a , si son mecanicos m otros o :"
+           lea articulo
+    
+    escriba " ingrese numero de articulos comprados  :"
+           lea compra
+ 
+ 
+ art_hogar<-50000
+ art_alimentos<-20000
+ art_mecan<-100000
+
+
+ si ( articulo = h) y (compra>50) entonces 
+ presupuesto_hogar<-(((art_hogar*compra)*10)/100)
+ descuento<-((art_hogar*compra)-presupuesto_hogar)
+ venta<-art_hogar*compra
+ escriba " el valor de su compra es : " , venta , "pero "
+ escriba " su compra supero el numero de articulos comprados por lo tanto su presupuesto o su valor  es : " , descuento
+  llamar nueva_linea 
+ sino 
+ si (articulo=h) y (compra<50) entonces
+ valor<-art_hogar*compra
+ escriba " el valor de su compra es : " , valor 
+ 
+ 
+ fin si 
+ fin si
+ fin
+   
+   

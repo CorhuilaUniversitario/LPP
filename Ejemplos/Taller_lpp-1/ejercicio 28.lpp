@@ -1,0 +1,13 @@
+real x1, x2, y1, y2, distancia
+inicio
+escriba "Ingresar x1: "
+lea x1
+escriba "Ingresar x2: "
+lea x2
+escriba "Ingresar y1: "
+lea y1
+escriba "Ingresar y2: "
+lea y2
+distancia<- ((x1^2 - x2^2) + (y1^2 - y2^2))^(1/2)
+escriba "La distancia entre los dos puntos es : ", distancia
+fin

@@ -1,0 +1,36 @@
+
+
+real suma,num1,num2,suma1,suma2,suma3,suma4,suma5,suma6
+inicio 
+escriba "ingrese un numero : " 
+lea num1 
+escriba "ingrese otro numero : " 
+lea num2
+
+si (num1>0) y (num2>0) entonces 
+suma<-num1+num2
+escriba  "la suma de positivos es : " , suma
+
+sino 
+si (num1>0) y  (num2<0) entonces 
+suma1<-(num1+(-num2))
+escriba  "la suma de positivos y negativos es : "  ,suma1
+
+
+sino
+si (num1<0) y( num2>0) entonces 
+suma2<-((-num1)+num2)
+escriba  "suma de positivos y negativos : " , suma2
+
+
+sino
+si (num1<0) y (num2<0) entonces 
+suma3<-num1+num2
+escriba  "la suma de negativos es : " , suma3
+
+
+fin si
+fin si
+fin si
+fin si
+fin

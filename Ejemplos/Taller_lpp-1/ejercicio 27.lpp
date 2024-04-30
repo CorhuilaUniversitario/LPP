@@ -1,0 +1,13 @@
+real cp, af, aa, ti, preArt
+inicio
+escriba "ingresar el costo del producto : "
+lea cp
+escriba "ingresar el año futuro : "
+lea af
+escriba "ingresar el año actual : "
+lea aa
+escriba "ingresar tasa de interes anual: "
+lea ti
+preArt<- cp*(1-ti)^(af-aa)
+escriba "el precio el articulo enun año futuro es" , preArt
+fin

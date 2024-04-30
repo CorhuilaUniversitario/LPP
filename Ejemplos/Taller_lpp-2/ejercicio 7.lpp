@@ -1,0 +1,24 @@
+cadena [15]nombre
+real sal_hrs,hrs_al_m,sal_mensual
+
+inicio
+escriba "ingrese nombre : "
+lea nombre
+escriba "ingresar valor en dinero por hora "
+lea sal_hrs
+escriba "ingrese hrs trabajadas al mes : "
+lea hrs_al_m
+
+
+sal_mensual<-(hrs_al_m*sal_hrs)
+si sal_mensual<500.000 entonces
+escriba "su salario es semejante o mayor a 500.000 "
+sino
+escriba "su salaro es irregular a 500.000 "
+escriba " nombre:", nombre
+escriba "salario mensual : ", sal_mensual
+fin si
+
+fin
+
+

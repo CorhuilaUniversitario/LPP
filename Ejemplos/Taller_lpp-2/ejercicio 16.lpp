@@ -1,0 +1,37 @@
+
+//	Leer de un registro el nombre, el valor de la hora y el número de horas trabajadas en la 
+//	semana.//
+
+cadena [20]nombre ,regist
+entero  val_hr,horas_trab,valor
+inicio 
+
+escriba "ingrese su nombre : "
+lea nombre
+
+escriba "ingrese valor de la hora : "
+lea val_hr
+
+escriba "ingrese  horas trabajadas  a la semana: "
+lea horas_trab
+
+escriba "desea ver el regitro si , si copie a , si no copie b : "
+lea  regist
+
+si (regist="a") entonces
+escriba " su registro es el siguiente : " 
+llamar nueva_linea
+escriba " su nombre es : "  ,nombre
+llamar nueva_linea
+escriba " el valor de la hora es : " , val_hr
+llamar nueva_linea
+escriba  "numero de horas trabajadas a la semana : " ,horas_trab
+
+sino
+si(regist="b")  entonces
+escriba " esta bien "
+
+fin si 
+fin si
+
+fin

@@ -1,0 +1,29 @@
+entero num1,num2,num3,num4,mayor
+inicio
+escriba "ingrese el numero 1 :"
+lea num1
+escriba "ingrese numero 2 :" 
+lea num2
+escriba "ingrese el numero 3:  "
+lea num3
+escriba "ingrese numero 4: " 
+lea num4
+si  (num1>num2) y (num1>num3) y (num1>num4) entonces
+     mayor<-num1
+   
+sino si(num2>num1) y (num2>num3) y( num2>num4) entonces
+   mayor<-num2
+   
+sino si(num3>num1) y (num3>num2)y(num3>num4) entonces
+  mayor<-num3
+   
+sino si(num4>num1) y (num4>num2) y (num4>num3) entonces
+    mayor<-num4
+  
+    
+fin si
+fin si
+fin si
+fin si 
+escriba " el numero mayor es : " ,mayor
+fin

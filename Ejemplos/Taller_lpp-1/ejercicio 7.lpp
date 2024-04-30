@@ -1,0 +1,12 @@
+real pi,area, lon_circ, radio
+inicio
+pi<-3.1416
+escriba "ingresar el radio del circulo: "
+lea radio
+area<- pi*radio^2
+lon_circ<-(2*pi)*radio
+escriba "el area del circulo es: ",area
+llamar nueva_linea
+escriba "la longitud de circunferencia es: ",lon_circ
+fin
+

@@ -1,0 +1,46 @@
+/*
+----------------------------------------------------------------------------------------------------------------------------
+		AUTOR: NICOLAS TELLO MENDEZ  CODIGO: 9022224149
+----------------------------------------------------------------------------------------------------------------------------
+
+	Ingresar la cantidad de minutos que tardó n ciclistas en finalizar la prueba de un kilometro.
+	Finalmente, mostrar el mayor y menor tiempo obtenido por los ciclistas. 
+		Nota: Si desea, puede agregar el nombre del ciclista. 
+*/
+
+Real Total, i, Mayor, Menor, Tiem, Nombre
+
+INICIO
+	Escriba "Ingrese el numero de ciclistas en la prueba: "
+	Lea Total
+	
+	i<-1
+	
+	Mientras i <= Total Haga
+		Escriba "Digite cuanto tardo el ciclista en terminar la prueba: "
+		Lea Tiem
+		
+		Llamar Nueva_linea
+		Si (i=1) Entonces
+			Mayor<-Tiem
+			Menor<-Tiem
+		
+		Sino
+			Si (Tiem>Mayor) Entonces
+				Mayor<-Tiem
+			
+			Sino 
+				Si (Mayor<Menor) Entonces
+					Menor<-Mayor
+				Fin si
+			Fin si
+		Fin si
+		i<-i+1
+	Fin mientras 
+	
+	Llamar Nueva_linea
+	Escriba "El Mayor tiempo obtenido por los ciclistas es: ",Mayor
+	Llamar Nueva_linea	
+	Escriba "El Menor tiempo obtenido por los ciclistas es: ",Menor
+	
+FIN

@@ -1,0 +1,18 @@
+/* Diseñar un algoritmo que solicite una cantidad en minutos y los convierta a segundos */
+
+ENTERO minutos, segundos
+
+INICIO
+	//inicializar variable
+	segundos<-minutos*60
+	
+	ESCRIBA "Dijite el tiempo en minutos: "
+	LEA minutos
+	
+	//proceso
+	segundos<-minutos*60
+	
+	//salida
+	ESCRIBA "Sus ",minutos," minutos convertidos a segundos es igual a: ",segundos," segundos" 
+
+FIN

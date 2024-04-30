@@ -1,0 +1,19 @@
+/*Se desea saber el valor a pagar por la compra de pan.
+Se sabe que cada pan cuesta 2000
+*/
+REAL cantidad, hola,buenastardes
+INICIO 
+	//Inicializar variables
+	hola<-2000
+	cantidad<-0
+	buenastardes<-0
+	//Vender pan
+	ESCRIBA "Digite la cantidad de panes a comprar:"
+	LEA cantidad
+	
+	//Proceso de calcular la venta
+	buenastardes<-cantidad*hola
+	
+	//Cobrar
+	ESCRIBA "El valor a pagar por la compra de ",cantidad," panes debe pagar ",buenastardes
+FIN 

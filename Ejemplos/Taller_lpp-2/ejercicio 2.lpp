@@ -1,0 +1,14 @@
+real num,raiz_c
+inicio
+escriba "ingrese el numero :"
+lea num
+si num<0 entonces
+escriba " raiz imaginaria "
+llamar nueva_linea 
+sino 
+si num>0 entonces
+raiz_c<-(num^(1/2))
+escriba "la raiz cuadrada de ese numero es : " , raiz_c
+fin si 
+fin si
+fin

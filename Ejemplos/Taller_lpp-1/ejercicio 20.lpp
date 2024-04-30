@@ -1,0 +1,48 @@
+real  m_ex1,m_t1,m_t2,m_t3,f_ex1,f_t1,f_t2,q_ex1,q_t1,q_t2,q_t3,operacion_m1,operacion_m2,promedio_mat,operacion_f1,operacion_f2,promedio_fis,operacion_q1,operacion_q2,promedio_quim
+inicio
+escriba "ingrese nota de  examen de matematicas: "
+lea m_ex1
+escriba "ingrese nota de la primera tarea : "
+lea m_t1
+escriba "ingrese nota de la segunda  tarea : "
+lea m_t2
+escriba "ingrese nota de la tercera tarea : "
+lea m_t3
+llamar nueva_linea
+escriba "ingrese la nota del examen de fisica: "
+lea f_ex1
+escriba " ingrese nota de la primer tarea :"
+lea f_t1
+escriba " ingrese nota de la segunda tarea :"
+lea f_t2
+llamar nueva_linea
+escriba "ingrese nota del primer examen de quimica : "
+lea q_ex1
+escriba "ingrese nota de la primera tarea : "
+lea q_t1
+escriba "ingrese nota de la segunda tarea : "
+lea q_t2
+escriba "ingrese nota de la tercera tarea : "
+lea q_t2
+llamar nueva_linea
+operacion_m1<-m_ex1*90/100
+operacion_m2<-(((m_t1+m_t2+m_t3)/3)*10)/100
+promedio_mat<-operacion_m1+operacion_m2
+llamar nueva_linea
+operacion_f1<-(f_ex1*80)/100
+operacion_f2<-(((f_t1+f_t2)/2)*20)/100
+promedio_fis<-operacion_f1+operacion_f2
+llamar nueva_linea
+operacion_q1<-(q_ex1*85)/100
+operacion_q2<-(((q_t1+q_t2+q_t3)/3)*15)/100
+promedio_quim<-operacion_q1+operacion_q2
+llamar nueva_linea
+escriba " el promedio de la materia matematicas es : " , promedio_mat
+llamar nueva_linea
+escriba " el promedio de la materia de fisica  es : " , promedio_fis
+llamar nueva_linea
+escriba " el promedio de la materia quimica  es : " , promedio_quim
+fin
+
+fin
+
